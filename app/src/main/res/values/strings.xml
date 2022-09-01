@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Cafe_App</string>
+    <string name="textview">Добро Пожаловать</string>
+    <string name="hint_name">Введите имя:</string>
+    <string name="hint_password">Введите пороль:</string>
+    <string name="defualt_name">Клиент</string>
+    <string name="defualt_passowrd">пароль</string>
+    <string name="buttom_login">Войти</string>
+    <string name="login_description">Логотип приложения</string>
+    <string name="warning_fill_fields">Все поля должны быть заполнены</string>
+    <string name="textViewHello">Здравствуйте, что желаете заказать?</string>
+    <string name="textViewChooseDrink">Выберите вид напитка</string>
+    <string name="checkboxMilk">Молоко</string>
+    <string name="checkboxSuger">Сахар</string>
+    <string name="checkboxLemon">Лемон</string>
+    <string name="textViewAdditions">Что добавить в ващ %s!?</string>
+    <string name="buttonSendOrder">Кнопка отправить заказ</string>
+    <string name="radioButtonTea">Чай</string>
+    <string name="radioButtonCoffee">Кофе</string>
+    <string name="hello_user">Привет, %s!. Что будете заказывать?</string>
+    <string name="order">Имя: %s!\nПароль: %s!\nНапиток: %s!\nВид напитка: %s!\n</string>
+    <string name="need_additions">Необходимые добавки: </string>
+    <string name="Explanation">Информация по вашему заказу</string>
+    <string name="thx">Спасибо! Хотите повторить, ваш заказ?</string>
+
+
+    <string-array name="options_of_coffee">
+        <item>Американо</item>
+        <item>Экспрессо</item>
+        <item>Латте</item>
+    </string-array>
+
+    <string-array name="options_of_tea">
+        <item>Зеленый</item>
+        <item>Черный</item>
+        <item>Ягодный</item>
+    </string-array>
+</resources>

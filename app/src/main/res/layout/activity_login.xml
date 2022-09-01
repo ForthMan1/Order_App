@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".onClickCreateOrderActivity"
+    android:background="@color/Background_grape"
+    >
+
+    <TextView
+        android:id="@+id/textViewHello"
+        android:layout_width="408dp"
+        android:layout_height="36dp"
+        android:layout_margin="8dp"
+        android:gravity="center"
+        android:text="@string/textViewHello"
+        android:textColor="@color/Grape_color"
+        android:textSize="24sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="56dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textViewChooseDrink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="@string/textViewChooseDrink"
+        android:textColor="@color/Grape_color"
+        android:textSize="24sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkboxLemon" />
+
+    <Spinner
+        android:id="@+id/spinnerCoffee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_marginTop="8dp"
+        android:entries="@array/options_of_coffee"
+        android:textColor="@color/white"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewChooseDrink" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        android:textSize="24sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewHello">
+
+        <RadioButton
+            android:id="@+id/radioButtonTea"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:checked="true"
+            android:onClick="onClickChangeDrink"
+            android:text="@string/radioButtonTea"
+            android:textColor="@color/white" />
+
+        <RadioButton
+            android:id="@+id/radioButtonCoffee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:onClick="onClickChangeDrink"
+            android:text="@string/radioButtonCoffee"
+            android:textColor="@color/white" />
+
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/checkboxMilk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/checkboxMilk"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/checkboxLemon"
+        app:layout_constraintStart_toStartOf="@+id/checkboxSuger"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAdditions" />
+
+    <CheckBox
+        android:id="@+id/checkboxSuger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/checkboxSuger"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/checkboxMilk"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAdditions" />
+
+    <Spinner
+        android:id="@+id/spinnerTea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_marginTop="8dp"
+        android:entries="@array/options_of_tea"
+        android:textColor="@color/white"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewChooseDrink" />
+
+    <CheckBox
+        android:id="@+id/checkboxLemon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/checkboxLemon"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/checkboxMilk"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAdditions" />
+
+    <TextView
+        android:id="@+id/textViewAdditions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="@string/textViewAdditions"
+        android:textColor="@color/Grape_color"
+        android:textSize="24sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <ImageView
+        android:id="@+id/buttonSendOrder"
+        android:layout_width="379dp"
+        android:layout_height="284dp"
+        android:layout_margin="8dp"
+        android:contentDescription="@string/buttonSendOrder"
+        android:src="@drawable/button"
+        android:onClick="onClickSendOrder"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.375"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerCoffee"
+        app:layout_constraintVertical_bias="0.28" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
